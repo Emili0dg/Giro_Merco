@@ -1,0 +1,745 @@
+/* FONTS */
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* OTROS ESTILOS */
+.bye-web {
+    display: none;
+}
+
+.bye-responsive {
+    display: block;
+}
+
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* NAV */
+.navweb {
+    width: 100%;
+    background-color: #e9552d;
+    display: block;
+    position: fixed;
+    z-index: 999;
+}
+
+.navresponsive {
+    display: none;
+}
+
+.lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.lista a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: #e9552d;
+    color: white !important;
+}
+
+.desplegable {
+    display: none;
+}
+
+.tienda {
+    width: fit-content;
+    background-color: #79ae45;
+    border-radius: 4vh;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tienda img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.circulo {
+    background-color: white;
+    border-radius: 100%;
+    margin: 4px;
+}
+
+.nav-icons {
+    width: 100%;
+    margin: 0;
+    padding: 1vh;
+}
+
+/* SLIDER */
+.carousel-indicators [data-bs-target] {
+    width: 1vh;
+    height: 1vh;
+    border-radius: 100%;
+    transition: none;
+    opacity: 1;
+}
+
+.carousel-indicators [data-bs-target].active {
+    background-color: #e9552d;
+}
+
+.carousel-indicators {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    top: 50%;
+    height: 0;
+    opacity: 1;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 1;
+}
+
+.posicion-ofertas {
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-ofertas {
+    background-color: #e9552d;
+    border-radius: 4vh;
+    width: max-content;
+    display: flex;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.btn-ofertas p {
+    color: white;
+    margin: 0;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.btn-ofertas img {
+    width: 2rem;
+    margin: 0;
+    padding: 1vh;
+}
+
+.btn-position {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.btn-wha {
+    position: fixed;
+    width: 10vh;
+    height: 10vh;
+    bottom: 1vw;
+    right: 1vw;
+    background-color: #79ae45;
+    border-radius: 100%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    padding: 2vh;
+}
+
+.containe-social {
+    display: block;
+    width: 10vw;
+    border-radius: 4vh;
+    border: 2px solid white;
+    background-color: #79ae45;
+}
+
+.social-media {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.carousel-control-prev-icon {
+    border-radius: 100%;
+    background: white url("/images/flecha-pequena-izquierda.svg") center center/contain no-repeat;
+}
+
+.carousel-control-prev-icon:hover {
+    background: #e9552d url("/images/flecha-pequena-izquierda-blanco.svg") center center/contain no-repeat;
+}
+
+.carousel-control-next-icon {
+    border-radius: 100%;
+    background: white url("/images/flecha-pequena-derecha.svg") center center/contain no-repeat;
+}
+
+.carousel-control-next-icon:hover {
+    background: #e9552d url("/images/flecha-pequena-derecha-blanco.svg") center center/contain no-repeat;
+}
+
+/* BODY */
+.tittle {
+    text-align: center;
+    color: #e9552d;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.hojita {
+    background: url('/images/hojademerco.png') center center/contain no-repeat;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+#body-fondo {
+    background: url('/images/Patron.png') center center/cover no-repeat;
+    width: 100%;
+    height: max-content;
+}
+
+/* OFERTAS */
+.carousel-indicators .Ofertas-slide.active {
+    background-color: #79ae45;
+}
+
+.ofertas-img-slider img {
+    border-radius: 5vh;
+    height: 50vh;
+}
+
+.ofertas-img img {
+    border-radius: 3vh;
+    margin-top: 5%;
+}
+
+/* GARANTÍAS */
+.garantias-img {
+    width: 50%;
+    position: relative;
+    top: 50%;
+}
+
+.garantias-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+    color: black;
+    background-color: #efefef;
+    border-radius: 4vh;
+    margin-bottom: 7.5%;
+    padding: 10%;
+    transition: .5s;
+}
+
+.garantias-container p {
+    height: 15vh;
+}
+
+.azul:hover {
+    background-color: #62a6da;
+    color: white;
+}
+
+.azul:hover h2 {
+    transition: 1s;
+    color: white !important;
+}
+
+.verde:hover {
+    background-color: #398943;
+    color: white;
+}
+
+.verde:hover h2 {
+    transition: 1s;
+    color: white !important;
+}
+
+.naranja:hover {
+    background-color: #ecad35;
+    color: white;
+}
+
+.naranja:hover h2 {
+    transition: 1s;
+    color: white !important;
+}
+
+.rojo:hover {
+    background-color: #d34529;
+    color: white;
+}
+
+.rojo:hover h2 {
+    transition: 1s;
+    color: white !important;
+}
+
+/* SUCURSALES */
+.container-sucursales {
+    background-color: #eaeaea;
+    border-radius: 4vh;
+    text-align: center;
+    padding: 1%;
+}
+
+.container-sucursales select {
+    border: none;
+    border-radius: 4vh;
+    margin: 0;
+    padding: 1vh;
+    font-size: 2vh;
+    width: 100%;
+    text-align: center;
+}
+
+.container-sucursales input {
+    border-radius: 4vh;
+    border: none;
+    padding: 1vh;
+    background-color: #bababa;
+    color: white;
+    width: 80%;
+}
+
+.mapa {
+    width: 100%;
+    border-radius: 4vh;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* MERCO QUEREMOS ESCUCHARTE */
+.merco-escucharte {
+    background: url('/images/fondo-escucharte.png') center center/cover no-repeat;
+    width: 100%;
+    height: 50vh;
+    color: white;
+    text-align: center;
+}
+
+.merco-escucharte h5 {
+    font-size: 4vh;
+}
+
+.merco-escucharte h1 {
+    font-size: 12vh;
+    font-style: italic;
+}
+
+.pepito-tienda {
+    background: url('/images/pepito-tienda.png') center center/cover no-repeat;
+    width: 100%;
+    height: 50vh;
+}
+
+.merco-naranja {
+    background: url('/images/fondo-naranja.png') center center/cover no-repeat;
+    width: 100%;
+    height: 74vh;
+    color: white;
+    padding: 3vh;
+}
+
+.merco-naranja h1 {
+    font-size: 3vh;
+}
+
+.merco-naranja p {
+    font-size: 1.5vh;
+}
+
+.pepito-dentro {
+    background: url('/images/pepito-dentro.png') center center/cover no-repeat;
+    width: 101%;
+    height: 74vh;
+}
+
+.hoja-blanca {
+    background: url('/images/hoja-blanca.png') center center/contain no-repeat;
+    display: inline-block;
+    width: 10rem;
+    height: 5rem;
+}
+
+.btn-wha-escu {
+    font-size: auto;
+    border: 1px solid white;
+    border-radius: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #57bb70;
+    color: white;
+    padding: 1vh;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.btn-wha-escu span {
+    background: url('/images/whatsapp.svg') center center/contain no-repeat;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.btn-mess-escu {
+    border: 1px solid white;
+    border-radius: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4994ec;
+    color: white;
+    padding: 1vh;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.btn-mess-escu span {
+    background: url('/images/facebook-messenger.svg') center center/contain no-repeat;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.pasos {
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+.pasos h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.pasos p {
+    font-size: 1.8vh;
+}
+
+.hagamos-suceda button {
+    border: none;
+    border-top-left-radius: 4vh;
+    border-bottom-left-radius: 4vh;
+    background-color: #79ae45;
+    color: white;
+    padding-left: 1vw;
+}
+
+/* SÉ EL PRIMERO */
+#seelprimero {
+    background: url('/images/fondo-seelprimero.jpg') center center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+}
+
+.forms-seelprimero {
+    padding: 10%;
+}
+
+.forms-seelprimero input,
+select {
+    width: 100%;
+    padding: 1vh;
+    padding-left: 2vh;
+    border: none;
+    border-radius: 4vh;
+    margin-bottom: 2vh;
+}
+
+.btn-suscribirme {
+    background-color: white;
+    border-radius: 4vh;
+    display: flex;
+    text-align: center;
+    width: fit-content;
+    padding: 0.5vh;
+}
+
+.btn-suscribirme p {
+    color: #79ae45;
+    margin: 0;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.btn-suscribirme img {
+    width: 2rem;
+    margin: 0;
+    padding: .5vh;
+}
+
+/* FOOTER */
+#fondo-footer {
+    background: url('/images/fondo-footer.jpg') center center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+#fondo-footer a,
+li {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.final-footer {
+    background-color: #79ae45;
+    color: white;
+    padding: 1vh;
+    text-align: center;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .bye-web {
+        display: block;
+    }
+
+    .bye-responsive {
+        display: none;
+    }
+
+    /* NAV */
+    .navresponsive {
+        width: 100%;
+        background-color: #e9552d;
+        display: block;
+        position: fixed;
+        z-index: 999;
+    }
+
+    .navweb {
+        display: none;
+    }
+
+    .desplegable {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-color: black;
+        left: -100%;
+        transition: 1s;
+        z-index: 9999;
+    }
+
+    .desplegable-on {
+        left: 0;
+    }
+
+    .box-carrito {
+        background-color: #79ae45;
+        border-radius: 20%;
+        border: none;
+    }
+
+    .cruz {
+        width: 100%;
+        margin: 0;
+        padding: 1vh;
+        transform: rotate(0deg);
+    }
+
+    .cruz-rotate-on {
+        animation: rotate-on 1s ease-in-out forwards;
+    }
+
+    @keyframes rotate-on {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+
+        }
+    }
+
+    .cruz-rotate-off {
+        animation: rotate-off 1s ease-in-out forwards;
+    }
+
+    @keyframes rotate-off {
+        0% {
+            transform: rotate(360deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+
+        }
+    }
+
+    /* SLIDER */
+    .carousel-indicators [data-bs-target] {
+        width: 1.5vh;
+        height: 1.5vh;
+    }
+
+    .containe-social {
+        display: none;
+    }
+
+    .btn-wha {
+        width: 70%;
+    }
+
+    .carousel-control-prev-icon {
+        background: #e9552d url("/images/flecha-pequena-izquierda-blanco.svg") center center/contain no-repeat;
+    }
+
+    .carousel-control-next-icon {
+        background: #e9552d url("/images/flecha-pequena-derecha-blanco.svg") center center/contain no-repeat;
+    }
+
+    /* OFERTAS */
+    .ofertas-img-slider img {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        border-radius: 4vh;
+        height: 20vh;
+    }
+
+    .ofertas-img img {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        border-radius: 4vh;
+        height: 20vh;
+    }
+
+    /* SUCURSALES */
+    .container-sucursales {
+        padding: 5%;
+    }
+
+    .container-sucursales select {
+        margin-bottom: 1.5vh;
+    }
+
+    /* GARANTÍAS */
+    .garantias-container{
+        width: 80%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .garantias-container p {
+        height: auto;
+    }
+
+    /* MERCO QUEREMOS ESCUCHARTE */
+    .merco-escucharte {
+        height: 100%;
+        padding: 5%;
+        border-radius: 4vh;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+
+    .merco-escucharte h5 {
+        font-size: 2vh;
+    }
+
+    .merco-escucharte h1 {
+        font-size: 5vh;
+    }
+
+    .hoja-blanca {
+        width: 5rem;
+        height: 2rem;
+    }
+
+    .merco-naranja {
+        padding: 5%;
+        height: auto;
+        border-radius: 4vh;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+
+    .btn-wha-escu {
+        font-size: x-large;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    .btn-wha-escu span {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .btn-mess-escu {
+        font-size: x-large;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    .btn-mess-escu span {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    /* FOTTER */
+    .social-media li{
+        margin: 5%;
+    }
+}
